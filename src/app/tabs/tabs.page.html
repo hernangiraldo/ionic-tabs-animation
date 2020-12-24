@@ -1,19 +1,32 @@
-<ion-tabs>
+<ion-tabs (ionTabsDidChange)="changeTab($event)">
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+  <ion-tab-bar slot="bottom" #title>
+    <div class="empty-space" #whiteRound>
+      <svg class="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.1 11.1"><defs><style>.cls-1{fill: var(--bkg);}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,0H11.1V11.1A11.1,11.1,0,0,0,0,0Z"/></g></g></svg>
+      <svg class="right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.1 11.1"><defs><style>.cls-1{fill: var(--bkg);}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M11.1,0H0V11.1A11.1,11.1,0,0,1,11.1,0Z"/></g></g></svg>
+    </div>
+    <ion-tab-button tab="tab1" #mySelect id="mySelect">
+      <div class="circle">
+        <ion-icon name="airplane"></ion-icon>
+      </div>
     </ion-tab-button>
 
     <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+      <div class="circle">
+        <ion-icon name="alarm"></ion-icon>
+      </div>
     </ion-tab-button>
 
     <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+      <div class="circle">
+        <ion-icon name="albums"></ion-icon>
+      </div>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab4">
+      <div class="circle">
+        <ion-icon name="analytics"></ion-icon>
+      </div>
     </ion-tab-button>
   </ion-tab-bar>
 

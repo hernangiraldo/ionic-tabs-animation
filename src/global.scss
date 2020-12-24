@@ -24,3 +24,15 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.button-native {
+  overflow: inherit !important;
+}
+
+:root {
+  --bkg: #d4d1d7
+}
+
+ion-content {
+  --background: var(--bkg);
+}
